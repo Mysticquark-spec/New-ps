@@ -349,6 +349,9 @@ function sortStudents() {
         }
     });
 }
+// // Global variables
+// let studentsData = [];
+// let charts = {};
 
 // Initialize charts with proper error handling
 function initializeCharts() {
@@ -365,114 +368,6 @@ function initializeCharts() {
     } catch (error) {
         console.error('Error initializing charts:', error);
     }
-}
-
-// Initialize status chart with better error handling
-function initStatusChart() {
-    const canvas = document.getElementById('statusChart');
-    if (!canvas) return;
-    
-    const ctx = canvas.getContext('2d');
-    const selected = studentsData.filter(s => s.Selected === 'yes').length;
-    const rejected = studentsData.filter(s => s.Selected === 'no').length;
-    const disabled = studentsData.filter(s => s.Selected === 'dis').length;
-    
-    // Destroy existing chart if it exists
-    if (charts.status) {
-        charts.status.destroy();
-    }
-    
-    charts.status = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Selected', 'Not Selected', 'Disabled'],
-            datasets: [{
-                data: [selected, rejected, disabled],
-                backgroundColor: [
-                    '#10B981',
-                    '#EF4444',
-                    '#F59E0B'
-                ],
-                borderWidth: 2,
-                borderColor: '#ffffff'
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        padding: 20,
-                        usePointStyle: true,
-                        font: {
-                            size: 12
-                        }
-                    }
-                }
-            }
-        }
-    });
-}
-
-// Initialize stipend chart with better error handling
-function initStipendChart() {
-    const canvas = document.getElementById('stipendChart');
-    if (!canvas) return;
-    
-    const ctx = canvas.getContext('2d');
-    const selectedStudents = studentsData.filter(s => s.Selected === 'yes' && s.Salary > 0);
-    
-    // Create salary ranges
-    const ranges = [
-        { label: '< 75K', min: 0, max: 75000 },
-        { label: '75K-100K', min: 75000, max: 100000 },
-        { label: '100K-150K', min: 100000, max: 150000 },
-        { label: '150K-200K', min: 150000, max: 200000 },
-        { label: '> 200K', min: 200000, max: Infinity }
-    ];
-    
-    const rangeCounts = ranges.map(range => 
-        selectedStudents.filter(s => s.Salary >= range.min && s.Salary < range.max).length
-    );
-    
-    // Destroy existing chart if it exists
-    if (charts.stipend) {
-        charts.stipend.destroy();
-    }
-    
-    charts.stipend = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ranges.map(r => r.label),
-            datasets: [{
-                label: 'Students',
-                data: rangeCounts,
-                backgroundColor: '#3B82F6',
-                borderColor: '#1D4ED8',
-                borderWidth: 1,
-                borderRadius: 4
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        stepSize: 1
-                    }
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
-        }
-    });
 }
 
 // Fetch data from student.json
@@ -573,6 +468,65 @@ function initStatusChart() {
     });
 }
 
+// Initialize stipend chart with better error handling
+function initStipendChart() {
+    const canvas = document.getElementById('stipendChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const selectedStudents = studentsData.filter(s => s.Selected === 'yes' && s.Salary > 0);
+    
+    // Create salary ranges
+    const ranges = [
+        { label: '< 75K', min: 0, max: 75000 },
+        { label: '75K-100K', min: 75000, max: 100000 },
+        { label: '100K-150K', min: 100000, max: 150000 },
+        { label: '150K-200K', min: 150000, max: 200000 },
+        { label: '> 200K', min: 200000, max: Infinity }
+    ];
+    
+    const rangeCounts = ranges.map(range => 
+        selectedStudents.filter(s => s.Salary >= range.min && s.Salary < range.max).length
+    );
+    
+    // Destroy existing chart if it exists
+    if (charts.stipend) {
+        charts.stipend.destroy();
+    }
+    
+    charts.stipend = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ranges.map(r => r.label),
+            datasets: [{
+                label: 'Students',
+                data: rangeCounts,
+                backgroundColor: '#3B82F6',
+                borderColor: '#1D4ED8',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+}
+
 // Initialize salary distribution chart
 function initSalaryChart() {
     const canvas = document.getElementById('salaryChart');
@@ -646,7 +600,7 @@ function initSalaryChart() {
     });
 }
 
-// Initialize company chart
+// Initialize company chart - UPDATED TO SHOW ALL COMPANIES
 function initCompanyChart() {
     const canvas = document.getElementById('companyChart');
     if (!canvas) return;
@@ -670,68 +624,84 @@ function initCompanyChart() {
         }
     });
     
-    // Sort companies by count and take top 15
+    // Sort companies by count - REMOVED .slice(0, 15) to show ALL companies
     const companies = Object.keys(companyData)
-        .sort((a, b) => companyData[b].count - companyData[a].count)
-        .slice(0, 15);
+        .sort((a, b) => companyData[b].count - companyData[a].count);
     
     const studentCounts = companies.map(company => companyData[company].count);
+    
+    // Generate colors for all companies (cycling through a color palette)
+    const colorPalette = [
+        '#8B5CF6', '#3B82F6', '#10B981', '#F59E0B', '#EF4444', 
+        '#EC4899', '#14B8A6', '#F97316', '#84CC16', '#6366F1',
+        '#8B5A2B', '#059669', '#DC2626', '#7C2D12', '#1F2937',
+        '#7E22CE', '#0891B2', '#16A34A', '#CA8A04', '#B91C1C',
+        '#A21CAF', '#0F766E', '#EA580C', '#65A30D', '#4F46E5'
+    ];
+    const backgroundColors = companies.map((_, index) => 
+        colorPalette[index % colorPalette.length]
+    );
+    const borderColors = companies.map((_, index) => 
+        colorPalette[index % colorPalette.length]
+    );
     
     // Destroy existing chart if it exists
     if (charts.company) {
         charts.company.destroy();
     }
     
-    charts.company = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: companies,
-            datasets: [{
-                label: 'Students Placed',
-                data: studentCounts,
-                backgroundColor: '#8B5CF6',
-                borderColor: '#7C3AED',
-                borderWidth: 1,
-                borderRadius: 4
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        stepSize: 1
-                    }
-                },
-                x: {
-                    ticks: {
-                        maxRotation: 45,
-                        minRotation: 45
-                    }
+charts.company = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: companies,
+        datasets: [{
+            label: 'Students Placed',
+            data: studentCounts,
+            backgroundColor: backgroundColors,
+            borderColor: borderColors,
+            borderWidth: 1,
+            borderRadius: 4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    stepSize: 1
                 }
             },
-            plugins: {
-                legend: {
-                    display: false
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const company = context.label;
-                            const count = context.raw;
-                            const avgSalary = Math.round(companyData[company].totalSalary / count);
-                            return [
-                                `Students: ${count}`,
-                                `Avg Salary: ₹${avgSalary.toLocaleString()}`
-                            ];
-                        }
+            x: {
+                ticks: {
+                    maxRotation: 45,
+                    minRotation: 45,
+                    font: {
+                        size: companies.length > 20 ? 8 : companies.length > 10 ? 10 : 12
                     }
                 }
             }
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        // Only show the number of students, remove average salary
+                        return `Students: ${context.raw}`;
+                    }
+                }
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index'
         }
-    });
+    }
+});
 }
 
 // Initialize salary range analysis chart
@@ -854,7 +824,10 @@ function switchChartType(target, type) {
                     [isHorizontal ? 'y' : 'x']: {
                         ticks: {
                             maxRotation: isHorizontal ? 0 : 45,
-                            minRotation: isHorizontal ? 0 : 45
+                            minRotation: isHorizontal ? 0 : 45,
+                            font: {
+                                size: isHorizontal ? 10 : (charts.company.data.labels.length > 20 ? 8 : 10)
+                            }
                         }
                     }
                 };
@@ -864,34 +837,8 @@ function switchChartType(target, type) {
     }
 }
 
-// Calculate and display statistics
-function calculateStats() {
-    const selected = studentsData.filter(s => s.ps === 'yes' || s.Selected === 'yes');
-    const rejected = studentsData.filter(s => s.ps === 'no' || s.Selected === 'no');
-    const disabled = studentsData.filter(s => s.ps === 'dis' || s.Selected === 'dis');
-    
-    const placedWithSalary = selected.filter(s => (s.stipend || s.Salary || 0) > 0);
-    const salaries = placedWithSalary.map(s => s.stipend || s.Salary || 0);
-    
-    const avgSalary = salaries.length > 0 ? salaries.reduce((a, b) => a + b, 0) / salaries.length : 0;
-    const maxSalary = salaries.length > 0 ? Math.max(...salaries) : 0;
-    const minSalary = salaries.length > 0 ? Math.min(...salaries) : 0;
-    
-    return {
-        total: studentsData.length,
-        selected: selected.length,
-        rejected: rejected.length,
-        disabled: disabled.length,
-        placementRate: ((selected.length / (studentsData.length - disabled.length)) * 100).toFixed(1),
-        avgSalary: Math.round(avgSalary),
-        maxSalary: maxSalary,
-        minSalary: minSalary
-    };
-}
-
-// Initialize dashboard when DOM is loaded
+// Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, fetching student data...');
     fetchStudentData();
 });
 
