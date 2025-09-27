@@ -4,9 +4,9 @@
   "ERP ID": 41120220002,
   "CAMPUS ID": "2022A7PS0002H",
   "Name": "SIMRAN SESHA RAO",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "uber",
+  "Salary": "188000"
  },
  {
   "S.No": 239,
@@ -22,7 +22,7 @@
   "ERP ID": 41120220005,
   "CAMPUS ID": "2022A7PS0005H",
   "Name": "JANAGAMA DHANUSH REDDY",
-  "Selected": "dis",
+  "Selected": "no",
   "Company": "",
   "Salary": ""
  },
@@ -31,7 +31,7 @@
   "ERP ID": 41120220007,
   "CAMPUS ID": "2022A7PS0007H",
   "Name": "AMRUTA SHIVLINGAPPA",
-  "Selected": "dis",
+  "Selected": "no",
   "Company": "",
   "Salary": ""
  },
@@ -429,7 +429,7 @@
   "Name": "DEVAGUPTAPU VAISHNAV",
   "Selected": "yes",
   "Company": "qualcomm",
-  "Salary": "45000"
+  "Salary": "75000"
  },
  {
   "S.No": 286,
@@ -508,7 +508,7 @@
   "ERP ID": 41120220114,
   "CAMPUS ID": "2022A7PS0114H",
   "Name": "ADITYA SANTOSH JAIN",
-  "Selected": "yes",
+  "Selected": "no",
   "Company": "",
   "Salary": ""
  },
@@ -598,7 +598,7 @@
   "ERP ID": 41120220137,
   "CAMPUS ID": "2022A7PS0137H",
   "Name": "MULCHAND SAARTHEK RAJ",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "flipkart-mng",
   "Salary": "50000"
  },
@@ -634,7 +634,7 @@
   "ERP ID": 41120220145,
   "CAMPUS ID": "2022A7PS0145H",
   "Name": "VASIREDDY MANISH",
-  "Selected": "yes",
+  "Selected": "no",
   "Company": "",
   "Salary": ""
  },
@@ -904,7 +904,7 @@
   "ERP ID": 41120220232,
   "CAMPUS ID": "2022A7PS0232H",
   "Name": "KUTIKUPPALA APOORVA GAYATRI",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "texas instr",
   "Salary": "60000"
  },
@@ -949,7 +949,7 @@
   "ERP ID": 41120220328,
   "CAMPUS ID": "2022A7PS0328H",
   "Name": "PARAS PUNEET SINGH",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "flipkart-mng",
   "Salary": "50000"
  },
@@ -967,7 +967,7 @@
   "ERP ID": 41120220511,
   "CAMPUS ID": "2022A7PS0511H",
   "Name": "SRIHARISH RAVICHANDRAN",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "eighfold",
   "Salary": "150000"
  },
@@ -988,17 +988,16 @@
   "Selected": "no",
   "Company": "",
   "Salary": ""
- },
- {
+ },{
   "S.No": 348,
   "ERP ID": 41120221288,
   "CAMPUS ID": "2022A7PS1288H",
-  "Name": "AGA ALI MAHDI SAJID",
+  "Name": "AGA ALI MAHDI SAJ",
   "Selected": "no",
   "Company": "",
   "Salary": ""
  },
- {
+  {
   "S.No": 349,
   "ERP ID": 41120221293,
   "CAMPUS ID": "2022A7PS1293H",
@@ -1228,7 +1227,7 @@
   "ERP ID": 41120221537,
   "CAMPUS ID": "2022A7PS1537H",
   "Name": "THUMMALAPALLI BHARADWAJ",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "ring central",
   "Salary": "50000"
  },
@@ -1372,7 +1371,7 @@
   "ERP ID": 41120222012,
   "CAMPUS ID": "2022A7PS2012H",
   "Name": "PRANATHI  VOORA",
-  "Selected": "yes",
+  "Selected": "no",
   "Company": "",
   "Salary": ""
  },
