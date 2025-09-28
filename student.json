@@ -14,7 +14,7 @@
   "CAMPUS ID": "2022A7PS0003H",
   "Name": "SIMRAN SINGH",
   "Selected": "yes",
-  "Company": "jpmc-ds",
+  "Company": "jpmc ds",
   "Salary": "190000"
  },
  {
@@ -42,7 +42,7 @@
   "Name": "ANSHUL GOPAL",
   "Selected": "yes",
   "Company": "apple",
-  "Salary": "130000"
+  "Salary": "105000"
  },
  {
   "S.No": 243,
@@ -131,7 +131,7 @@
   "CAMPUS ID": "2022A7PS0031H",
   "Name": "KESHAV CHOUDHARY",
   "Selected": "yes",
-  "Company": "jpmc-ds",
+  "Company": "jpmc ds",
   "Salary": "190000"
  },
  {
@@ -248,7 +248,7 @@
   "CAMPUS ID": "2022A7PS0049H",
   "Name": "M SASHANK SOORYA",
   "Selected": "yes",
-  "Company": "jpmc-ban",
+  "Company": "jpmc ban",
   "Salary": "135000"
  },
  {
@@ -294,7 +294,7 @@
   "Name": "VENKATA SAKETH DAKURI",
   "Selected": "yes",
   "Company": "apple",
-  "Salary": "130000"
+  "Salary": "105000"
  },
  {
   "S.No": 271,
@@ -355,9 +355,9 @@
   "ERP ID": 41120220068,
   "CAMPUS ID": "2022A7PS0068H",
   "Name": "RAGI RAVIKANTH REDDY",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "jpmc ts",
+  "Salary": "225000"
  },
  {
   "S.No": 278,
@@ -365,7 +365,7 @@
   "CAMPUS ID": "2022A7PS0071H",
   "Name": "ULAVALA VINEETH",
   "Selected": "yes",
-  "Company": "",
+  "Company": "90000",
   "Salary": ""
  },
  {
@@ -382,9 +382,9 @@
   "ERP ID": 41120220076,
   "CAMPUS ID": "2022A7PS0076H",
   "Name": "KOTHAMASU SAI ADITHYA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "hph",
+  "Salary": "90000"
  },
  {
   "S.No": 281,
@@ -392,8 +392,8 @@
   "CAMPUS ID": "2022A7PS0077H",
   "Name": "SURI VISWESH",
   "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Company": "Cisco",
+  "Salary": "90000"
  },
  {
   "S.No": 282,
@@ -411,7 +411,7 @@
   "Name": "VATSAL SAXENA",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 284,
@@ -420,7 +420,7 @@
   "Name": "JINESH MODI",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 285,
@@ -429,7 +429,7 @@
   "Name": "DEVAGUPTAPU VAISHNAV",
   "Selected": "yes",
   "Company": "qualcomm",
-  "Salary": "75000"
+  "Salary": "45000"
  },
  {
   "S.No": 286,
@@ -526,8 +526,8 @@
   "ERP ID": 41120220117,
   "CAMPUS ID": "2022A7PS0117H",
   "Name": "GURRAM KOUSHIK",
-  "Selected": "no",
-  "Company": "",
+  "Selected": "yes",
+  "Company": "50000",
   "Salary": ""
  },
  {
@@ -590,8 +590,8 @@
   "CAMPUS ID": "2022A7PS0136H",
   "Name": "UDAY BHAVESH SUDANI",
   "Selected": "yes",
-  "Company": "flipkart",
-  "Salary": "100000"
+  "Company": "visa",
+  "Salary": "90000"
  },
  {
   "S.No": 304,
@@ -607,9 +607,9 @@
   "ERP ID": 41120220140,
   "CAMPUS ID": "2022A7PS0140H",
   "Name": "VIVAN M JAIN",
-  "Selected": "yes",
-  "Company": "visa",
-  "Salary": "100000"
+  "Selected": "dis",
+  "Company": "",
+  "Salary": ""
  },
  {
   "S.No": 306,
@@ -627,15 +627,15 @@
   "Name": "PAPPU MAHESH",
   "Selected": "yes",
   "Company": "apple",
-  "Salary": "130000"
+  "Salary": "105000"
  },
  {
   "S.No": 308,
   "ERP ID": 41120220145,
   "CAMPUS ID": "2022A7PS0145H",
   "Name": "VASIREDDY MANISH",
-  "Selected": "no",
-  "Company": "",
+  "Selected": "yes",
+  "Company": "comvault",
   "Salary": ""
  },
  {
@@ -654,7 +654,7 @@
   "Name": "MEGHADITYA GIRI",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 311,
@@ -689,7 +689,7 @@
   "CAMPUS ID": "2022A7PS0166H",
   "Name": "SURYABHA MUKHOPADHYAY",
   "Selected": "yes",
-  "Company": "jpmc-ds",
+  "Company": "jpmc ds",
   "Salary": "190000"
  },
  {
@@ -707,7 +707,7 @@
   "CAMPUS ID": "2022A7PS0174H",
   "Name": "BHUPATHIRAJU VISHAL VARMA",
   "Selected": "yes",
-  "Company": "jpmc-ds",
+  "Company": "jpmc ds",
   "Salary": "190000"
  },
  {
@@ -716,7 +716,7 @@
   "CAMPUS ID": "2022A7PS0183H",
   "Name": "SRI JAITRA SAKETH GOPARAJU",
   "Selected": "yes",
-  "Company": "jpmc-ts",
+  "Company": "jpmc ts",
   "Salary": "225000"
  },
  {
@@ -744,7 +744,7 @@
   "Name": "VIVAAN MISRA",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 321,
@@ -771,7 +771,7 @@
   "Name": "SIDDHANT KAMRA",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 324,
@@ -789,7 +789,7 @@
   "Name": "ANURAG MAITI",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 326,
@@ -850,8 +850,8 @@
   "ERP ID": 41120220218,
   "CAMPUS ID": "2022A7PS0218H",
   "Name": "VISHWA VIJAYAN",
-  "Selected": "no",
-  "Company": "",
+  "Selected": "yes",
+  "Company": "blackrock",
   "Salary": ""
  },
  {
@@ -1013,7 +1013,7 @@
   "Name": "KUNAL ARORA",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 351,
@@ -1031,7 +1031,7 @@
   "Name": "ABHINIVESH MITRA",
   "Selected": "yes",
   "Company": "google",
-  "Salary": "130000"
+  "Salary": "135000"
  },
  {
   "S.No": 353,
@@ -1182,9 +1182,9 @@
   "ERP ID": 41120221378,
   "CAMPUS ID": "2022A7PS1378H",
   "Name": "BUDAMAGUNTA HARI CHARAN",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "neilsen",
+  "Salary": "50000"
  },
  {
   "S.No": 370,
@@ -1193,7 +1193,7 @@
   "Name": "NISCHAY AGRAWAL",
   "Selected": "yes",
   "Company": "google",
-  "Salary": "130000"
+  "Salary": "135000"
  },
  {
   "S.No": 371,
@@ -1211,7 +1211,7 @@
   "Name": "CHHAVI MALHOTRA",
   "Selected": "yes",
   "Company": "apple",
-  "Salary": "130000"
+  "Salary": "105000"
  },
  {
   "S.No": 373,
@@ -1265,7 +1265,7 @@
   "Name": "TEJASVINI GOEL",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 379,
@@ -1346,7 +1346,7 @@
   "Name": "DIVYA  RAMANAN",
   "Selected": "yes",
   "Company": "visa",
-  "Salary": "100000"
+  "Salary": "90000"
  },
  {
   "S.No": 388,
@@ -1371,9 +1371,9 @@
   "ERP ID": 41120222012,
   "CAMPUS ID": "2022A7PS2012H",
   "Name": "PRANATHI  VOORA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "meesho ds",
+  "Salary": "150000"
  },
  {
   "S.No": 391,
