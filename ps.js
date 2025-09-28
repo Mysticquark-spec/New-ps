@@ -135,24 +135,40 @@ function updateFinancialOverview() {
     const selectedStudents = studentsData.filter(s => s.Selected === 'yes' && s.Salary > 0);
     
     if (selectedStudents.length === 0) {
-        document.getElementById('avgStipend').textContent = '₹0';
-        document.getElementById('medianStipend').textContent = '₹0';
+        document.getElementById('avgStipend').textContent = '₹0.00';
+        document.getElementById('medianStipend').textContent = '₹0.00';
         document.getElementById('totalCompanies').textContent = '0';
         return;
     }
     
     const salaries = selectedStudents.map(s => s.Salary).sort((a, b) => a - b);
-    const avgSalary = Math.round(salaries.reduce((sum, sal) => sum + sal, 0) / salaries.length);
+    
+    // Calculate average with two decimal places
+    const avgSalary = salaries.reduce((sum, sal) => sum + sal, 0) / salaries.length;
+    
+    // Calculate median with two decimal places
     const medianSalary = salaries.length % 2 === 0 
-        ? Math.round((salaries[salaries.length / 2 - 1] + salaries[salaries.length / 2]) / 2)
+        ? (salaries[salaries.length / 2 - 1] + salaries[salaries.length / 2]) / 2
         : salaries[Math.floor(salaries.length / 2)];
+    
     const uniqueCompanies = new Set(selectedStudents.map(s => s.Company.toLowerCase())).size;
     
-    document.getElementById('avgStipend').textContent = formatCurrency(avgSalary);
-    document.getElementById('medianStipend').textContent = formatCurrency(medianSalary);
+    document.getElementById('avgStipend').textContent = formatCurrencyWithDecimals(avgSalary);
+    document.getElementById('medianStipend').textContent = formatCurrencyWithDecimals(medianSalary);
     document.getElementById('totalCompanies').textContent = uniqueCompanies;
 }
 
+function formatCurrencyWithDecimals(amount) {
+    if (amount >= 10000000) {
+        return '₹' + (amount / 10000000).toFixed(2) + 'Cr';
+    } else if (amount >= 100000) {
+        return '₹' + (amount / 100000).toFixed(2) + 'L';
+    } else if (amount >= 1000) {
+        return '₹' + (amount / 1000).toFixed(2) + 'K';
+    } else {
+        return '₹' + amount.toFixed(2);
+    }
+}
 // Format currency
 function formatCurrency(amount) {
     if (amount >= 10000000) {
@@ -213,7 +229,7 @@ function renderStudentGrid() {
                 ${student.Selected === 'yes' ? `
                     <div class="detail-item">
                         <i class="fas fa-rupee-sign"></i>
-                        <span>${formatCurrency(student.Salary)}</span>
+                        <span>${formatCurrencyWithDecimals(student.Salary)}</span>
                     </div>
                 ` : ''}
                 <div class="detail-item">
