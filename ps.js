@@ -311,7 +311,8 @@ function showStudentModal(sNo) {
                 ${student.Selected === 'yes' ? `
                     <div class="detail-row">
                         <label>Stipend:</label>
-                        <span class="salary-amount">${formatCurrency(student.Salary)}</span>
+                        <span class="salary-amount">${formatCurrencyWithDecimals(student.Salary)}</span>
+
                     </div>
                 ` : ''}
             </div>
@@ -886,10 +887,10 @@ function updateCompanyTable() {
     const rows = Object.keys(companyData).map(company => {
         const salaries = companyData[company].sort((a, b) => a - b);
         const count = salaries.length;
-        const avg = Math.round(salaries.reduce((sum, sal) => sum + sal, 0) / count);
-        const median = count % 2 === 0 
-            ? Math.round((salaries[count / 2 - 1] + salaries[count / 2]) / 2)
-            : salaries[Math.floor(count / 2)];
+        const avg = salaries.reduce((sum, sal) => sum + sal, 0) / count;
+const median = count % 2 === 0 
+    ? (salaries[count / 2 - 1] + salaries[count / 2]) / 2
+    : salaries[Math.floor(count / 2)];
         const min = salaries[0];
         const max = salaries[salaries.length - 1];
         const range = max - min;
@@ -906,16 +907,16 @@ function updateCompanyTable() {
     }).sort((a, b) => b.count - a.count);
     
     tableBody.innerHTML = rows.map(row => `
-        <tr>
-            <td><strong>${row.company}</strong></td>
-            <td>${row.count}</td>
-            <td>${formatCurrency(row.avg)}</td>
-            <td>${formatCurrency(row.median)}</td>
-            <td>${formatCurrency(row.min)}</td>
-            <td>${formatCurrency(row.max)}</td>
-            <td>${formatCurrency(row.range)}</td>
-        </tr>
-    `).join('');
+    <tr>
+        <td><strong>${row.company}</strong></td>
+        <td>${row.count}</td>
+        <td>${formatCurrencyWithDecimals(row.avg)}</td>
+        <td>${formatCurrencyWithDecimals(row.median)}</td>
+        <td>${formatCurrencyWithDecimals(row.min)}</td>
+        <td>${formatCurrencyWithDecimals(row.max)}</td>
+        <td>${formatCurrencyWithDecimals(row.range)}</td>
+    </tr>
+`).join('');
 }
 
 // Setup event listeners
