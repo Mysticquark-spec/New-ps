@@ -22,7 +22,7 @@
   "ERP ID": 41120220005,
   "CAMPUS ID": "2022A7PS0005H",
   "Name": "JANAGAMA DHANUSH REDDY",
-  "Selected": "no",
+  "Selected": "dis",
   "Company": "",
   "Salary": ""
  },
@@ -31,7 +31,7 @@
   "ERP ID": 41120220007,
   "CAMPUS ID": "2022A7PS0007H",
   "Name": "AMRUTA SHIVLINGAPPA",
-  "Selected": "no",
+  "Selected": "dis",
   "Company": "",
   "Salary": ""
  },
@@ -76,7 +76,7 @@
   "ERP ID": 41120220015,
   "CAMPUS ID": "2022A7PS0015H",
   "Name": "VITTA PRAHARSH",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -85,9 +85,9 @@
   "ERP ID": 41120220016,
   "CAMPUS ID": "2022A7PS0016H",
   "Name": "SAI ASHISH VURE",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "blackrock",
+  "Salary": "75000"
  },
  {
   "S.No": 248,
@@ -167,8 +167,8 @@
   "CAMPUS ID": "2022A7PS0037H",
   "Name": "KISHAN ABIJAY P",
   "Selected": "yes",
-  "Company": "flipkart",
-  "Salary": "100000"
+  "Company": "nutanix",
+  "Salary": "140000"
  },
  {
   "S.No": 257,
@@ -211,9 +211,9 @@
   "ERP ID": 41120220043,
   "CAMPUS ID": "2022A7PS0043H",
   "Name": "PARTH A MEHTA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "singlestore",
+  "Salary": "150000"
  },
  {
   "S.No": 262,
@@ -230,8 +230,8 @@
   "CAMPUS ID": "2022A7PS0045H",
   "Name": "HARDIK AGRAWAL",
   "Selected": "yes",
-  "Company": "flipkart",
-  "Salary": "100000"
+  "Company": "nutanix",
+  "Salary": "140000"
  },
  {
   "S.No": 264,
@@ -328,9 +328,9 @@
   "ERP ID": 41120220061,
   "CAMPUS ID": "2022A7PS0061H",
   "Name": "GODAVARTHI Y SAI SHASHANK",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "navi",
+  "Salary": "150000"
  },
  {
   "S.No": 275,
@@ -373,7 +373,7 @@
   "ERP ID": 41120220075,
   "CAMPUS ID": "2022A7PS0075H",
   "Name": "ESHAAN SUDAN",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -401,7 +401,7 @@
   "CAMPUS ID": "2022A7PS0078H",
   "Name": "TANISHA AGARWAL",
   "Selected": "yes",
-  "Company": "flipkart",
+  "Company": "oracle",
   "Salary": "100000"
  },
  {
@@ -499,7 +499,7 @@
   "ERP ID": 41120220113,
   "CAMPUS ID": "2022A7PS0113H",
   "Name": "SRIVANT VISHNUVAJJALA",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -508,9 +508,9 @@
   "ERP ID": 41120220114,
   "CAMPUS ID": "2022A7PS0114H",
   "Name": "ADITYA SANTOSH JAIN",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "uber",
+  "Salary": "200000"
  },
  {
   "S.No": 295,
@@ -536,8 +536,8 @@
   "CAMPUS ID": "2022A7PS0119H",
   "Name": "PRATYUSH BINDAL",
   "Selected": "yes",
-  "Company": "flipkart",
-  "Salary": "100000"
+  "Company": "nutanix",
+  "Salary": "140000"
  },
  {
   "S.No": 298,
@@ -562,7 +562,7 @@
   "ERP ID": 41120220127,
   "CAMPUS ID": "2022A7PS0127H",
   "Name": "ARRABOLU THRISHA",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -599,8 +599,8 @@
   "CAMPUS ID": "2022A7PS0137H",
   "Name": "MULCHAND SAARTHEK RAJ",
   "Selected": "yes",
-  "Company": "flipkart-mng",
-  "Salary": "50000"
+  "Company": "franklin templaten",
+  "Salary": "75000"
  },
  {
   "S.No": 305,
@@ -679,9 +679,9 @@
   "ERP ID": 41120220160,
   "CAMPUS ID": "2022A7PS0160H",
   "Name": "R V S AASHREY KUMAR",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "nutanix",
+  "Salary": "140000"
  },
  {
   "S.No": 314,
@@ -697,9 +697,9 @@
   "ERP ID": 41120220171,
   "CAMPUS ID": "2022A7PS0171H",
   "Name": "HARSH VIKRAM JAJODIA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 316,
@@ -724,9 +724,9 @@
   "ERP ID": 41120220184,
   "CAMPUS ID": "2022A7PS0184H",
   "Name": "AARSH KULKARNI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 319,
@@ -751,7 +751,7 @@
   "ERP ID": 41120220198,
   "CAMPUS ID": "2022A7PS0198H",
   "Name": "GUDIPUDI SOUMITH SIDDARTHA",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -796,9 +796,9 @@
   "ERP ID": 41120220207,
   "CAMPUS ID": "2022A7PS0207H",
   "Name": "KOLLI NIKITHADEVI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "okta",
+  "Salary": "100000"
  },
  {
   "S.No": 327,
@@ -832,9 +832,9 @@
   "ERP ID": 41120220215,
   "CAMPUS ID": "2022A7PS0215H",
   "Name": "SNIGDHA BARUI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 331,
@@ -895,9 +895,9 @@
   "ERP ID": 41120220230,
   "CAMPUS ID": "2022A7PS0230H",
   "Name": "NISHIT NILAY",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 338,
@@ -922,9 +922,9 @@
   "ERP ID": 41120220235,
   "CAMPUS ID": "2022A7PS0235H",
   "Name": "VISHWAS VEDANTHAM",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "alphasense",
+  "Salary": "125000"
  },
  {
   "S.No": 341,
@@ -950,8 +950,8 @@
   "CAMPUS ID": "2022A7PS0328H",
   "Name": "PARAS PUNEET SINGH",
   "Selected": "yes",
-  "Company": "flipkart-mng",
-  "Salary": "50000"
+  "Company": "apple",
+  "Salary": "105000"
  },
  {
   "S.No": 344,
@@ -976,7 +976,7 @@
   "ERP ID": 41120221283,
   "CAMPUS ID": "2022A7PS1283H",
   "Name": "ARYAN ASHUTOSH DESHMUKH",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -985,26 +985,26 @@
   "ERP ID": 41120221287,
   "CAMPUS ID": "2022A7PS1287H",
   "Name": "PAARTH SHUKLA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "oracle",
+  "Salary": "100000"
  },{
   "S.No": 348,
   "ERP ID": 41120221288,
   "CAMPUS ID": "2022A7PS1288H",
   "Name": "AGA ALI MAHDI SAJ",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "uber",
+  "Salary": "200000"
  },
   {
   "S.No": 349,
   "ERP ID": 41120221293,
   "CAMPUS ID": "2022A7PS1293H",
   "Name": "PRIYANSH AGARWAL",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 350,
@@ -1065,9 +1065,9 @@
   "ERP ID": 41120221323,
   "CAMPUS ID": "2022A7PS1323H",
   "Name": "SAKSHAM DAGA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "ubs",
+  "Salary": "60000"
  },
  {
   "S.No": 357,
@@ -1119,9 +1119,9 @@
   "ERP ID": 41120221358,
   "CAMPUS ID": "2022A7PS1358H",
   "Name": "ALOK DESAI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "apple",
+  "Salary": "105000"
  },
  {
   "S.No": 363,
@@ -1137,9 +1137,9 @@
   "ERP ID": 41120221361,
   "CAMPUS ID": "2022A7PS1361H",
   "Name": "RITHVIK RAAJHA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "110000"
  },
  {
   "S.No": 365,
@@ -1155,9 +1155,9 @@
   "ERP ID": 41120221367,
   "CAMPUS ID": "2022A7PS1367H",
   "Name": "ANIMISH AGRAHARI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "amazon",
+  "Salary": "130000"
  },
  {
   "S.No": 367,
@@ -1236,7 +1236,7 @@
   "ERP ID": 41120221538,
   "CAMPUS ID": "2022A7PS1538H",
   "Name": "HRISHIKESH MK",
-  "Selected": "no",
+  "Selected": "dis",
   "Company": "",
   "Salary": ""
  },
@@ -1245,7 +1245,7 @@
   "ERP ID": 41120221652,
   "CAMPUS ID": "2022A7PS1652H",
   "Name": "SIDDHI GADODIA",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
@@ -1317,9 +1317,9 @@
   "ERP ID": 41120222004,
   "CAMPUS ID": "2022A7PS2004H",
   "Name": "ADVIK  SINHA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "trexquant",
+  "Salary": "500000"
  },
  {
   "S.No": 385,
@@ -1335,7 +1335,7 @@
   "ERP ID": 41120222007,
   "CAMPUS ID": "2022A7PS2007H",
   "Name": "TAANVI  DANDE",
-  "Selected": "no",
+  "Selected": "yes",
   "Company": "",
   "Salary": ""
  },
