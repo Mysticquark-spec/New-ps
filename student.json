@@ -805,9 +805,9 @@
   "ERP ID": 41120220208,
   "CAMPUS ID": "2022A7PS0208H",
   "Name": "TANISHQ VIJAY KURHADE",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "Wayfair",
+  "Salary": "100000"
  },
  {
   "S.No": 328,
@@ -1164,9 +1164,9 @@
   "ERP ID": 41120221374,
   "CAMPUS ID": "2022A7PS1374H",
   "Name": "BHARAT GUPTA",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "Wayfair",
+  "Salary": "100000"
  },
  {
   "S.No": 368,
@@ -1281,9 +1281,9 @@
   "ERP ID": 41120221798,
   "CAMPUS ID": "2022A7PS1798H",
   "Name": "PRIYANSHU TRIPATHI",
-  "Selected": "no",
-  "Company": "",
-  "Salary": ""
+  "Selected": "yes",
+  "Company": "Wayfair",
+  "Salary": "1000000"
  },
  {
   "S.No": 381,
